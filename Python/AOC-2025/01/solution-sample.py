@@ -13,10 +13,10 @@ for raw in lines:
     rightInput = None
 
     if raw.startswith("L"):
-        leftInput = -int(raw[1:])     # L68 -> -68 (int)
+        leftInput = -int(raw[1:])     # L68 becomes integer (int) -68 
         result.append(leftInput)
     elif raw.startswith("R"):
-        rightInput = int(raw[1:])     # R48 -> 48 (int)
+        rightInput = int(raw[1:])     # R48 becomes integer (int) 48
         result.append(rightInput)
     else:
         raise ValueError(f"Unexpected line: {raw}")
