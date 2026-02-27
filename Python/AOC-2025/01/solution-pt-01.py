@@ -1,6 +1,6 @@
 from pathlib import Path
 
-input_file = Path("input-sample.txt").read_text(encoding="utf-8").splitlines()
+input_file = Path("input.txt").read_text(encoding="utf-8").splitlines()
 
 result = []
 
@@ -21,31 +21,13 @@ for raw in input_file:
     else:
         raise ValueError(f"Unexpected line: {raw}")
 
-#print(result)  # [-68, -30, 48, -5, 60, -55, -1, -99, 14, -82]
-
 ########## end init
 
 start = int(50) # start at 50
 position = start 
 zero_count = int(0)
 
-# ##### Logic 01: If integer result is negative, add 100 to it
-# def wrap_negative(n: int) -> int: # (n:int) means the function takes one paramater called n. the : int part is a type hint saying you expect n to be an integer
-#     if n < 0: # If integer is negative
-#         n += 100 # Add 100 to integer
-#     return n # Return integer
-
-# #print(wrap_negative(test))
-
-# ##### Logic 02: If the integer position is exactly 100, reset number to 0
-# def position_hundred(n: int) -> int:
-#     if n == 100: # If the integer position is exactly 100
-#         n = int(0) # Reset the integer to 0
-#     return n   
-    
-#print(position_hundred(test))
-
-##### Logic 03: If the position integer starts at zero, add 1
+##### Logic 01: If the position integer starts at zero, add 1
 def position_zero(n: int) -> int:
     global zero_count
     if n == 0:
@@ -53,7 +35,7 @@ def position_zero(n: int) -> int:
         # n += 1
     return n
 
-##### Logic 04: If the integer is over 100, use modulo
+##### Logic 02: If the integer is over 100, use modulo
 def position_over_hundred(n: int) -> int:
     return n % 100
 
