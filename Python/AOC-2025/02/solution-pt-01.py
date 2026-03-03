@@ -1,8 +1,7 @@
-# for i in range(101):
-#     print(i)
+from pathlib import Path
 
-# Print it 5 times:
+input_file = Path("input.txt").read_text(encoding="utf-8").splitlines()
 
-for _ in range(5):
-    for i in range(101):
-        print(i)
+result = []
+
+print(input_file)
