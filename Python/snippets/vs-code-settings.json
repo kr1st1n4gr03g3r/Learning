@@ -1,0 +1,32 @@
+{
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.iconTheme": "file-icons-colourless",
+    "git.autofetch": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontFamily": "'IBM Plex Mono', monospace",
+    "terminal.integrated.fontFamily": "'IBM Plex Mono', 'Ubuntu Mono', monospace",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "git.confirmSync": true,
+    "editor.fontLigatures": false,
+
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "variable": {
+                "fontStyle": "underline"
+            },
+            "parameter": {
+                "fontStyle": "italic"
+            }
+        }
+    }
+}

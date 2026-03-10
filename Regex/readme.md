@@ -4,3 +4,9 @@
 <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/72/apple/114/smiling-face-with-open-mouth-and-cold-sweat_1f605.png" srcset="https://emojipedia-us.s3.amazonaws.com/thumbs/144/apple/114/smiling-face-with-open-mouth-and-cold-sweat_1f605.png 2x" alt="Smiling Face With Open Mouth &amp; Cold Sweat" title="Smiling Face With Open Mouth &amp; Cold Sweat" width="72" height="72">`
 
 `<a href="[^"]*">` will select `<a href="` and everything in-between it up until `">"`
+
+2) Replace text before specific text.
+
+Eg: Find 
+
+`^.*?(?=/R_)` 
