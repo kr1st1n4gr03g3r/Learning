@@ -5,8 +5,17 @@
 
 `<a href="[^"]*">` will select `<a href="` and everything in-between it up until `">"`
 
-2) Replace text before specific text.
+2) Replace text before specific text:
 
-Eg: Find 
+Eg: Select everything before "R_"
 
 `^.*?(?=/R_)` 
+or: 
+`(?<=/)[^/]+$`
+
+3) Select all text after specific text:
+Eg: Select everything after the last "/"
+
+`(?<=/)[^/]+$`
+
+<img width="386" height="286" alt="image" src="https://github.com/user-attachments/assets/81896f15-c243-4eff-98a3-52c86cc944da" />
