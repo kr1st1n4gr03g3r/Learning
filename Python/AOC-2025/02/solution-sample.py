@@ -6,3 +6,6 @@ result = []
 input_file.split('-')
 
 print(input_file)
+
+name= input("what's your name?")
+print(name)
